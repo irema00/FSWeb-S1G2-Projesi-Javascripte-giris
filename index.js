@@ -19,7 +19,12 @@ Aşağıdakileri yap:
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
-
+let surucuYasi = 32;
+if (surucuYasi > 18) {
+  console.log(true);
+} else {
+  console.log("false");
+}
 /*
 Görev 1b - Değerler (puanlamaya dahil değildir)
 
@@ -31,7 +36,12 @@ Aşağıdakileri yap:
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
+let birinciDeger = 12;
+let ikinciDeger = 94;
 
+if (birinciDeger < ikinciDeger) {
+  console.log(birinciDeger + 5);
+}
 /*
 Görev 1c - String bir değeri Number'a dönüştürün (puanlamaya dahil değildir)
 
@@ -42,6 +52,9 @@ Aşağıdakileri yap:
 
    İPUCU: Number metoduna bakabilirsin
 */
+const date = "1999";
+const date1 = 1999;
+console.log(typeof Number(date));
 
 /*
 Görev 1d - Çarpma
@@ -51,11 +64,10 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:
    2. a ve b'yi çarpıp, sonucu dönsün
    3. console.log(carpma(7,4)) ile yazdığın fonsiyonu test edin. Console'da sonucu 28 olarak görmelisin.
 */
-
-function carpma(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function carpma(a, b) {
+  return a * b;
 }
-
+console.log(carpma(4, 7));
 /* Görev 2 : Köpeğin Yaşı */
 
 /*
@@ -65,9 +77,11 @@ Aşağıdakileri yap:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function kopeginYasi(humanAge) {
+  return humanAge * 7;
 }
+let dogAge = kopeginYasi(3);
+console.log("Kopeginin yasi ", dogAge, "!");
 
 /* Görev 3 */
 /*
@@ -113,10 +127,10 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamla:
 3. Mil değerini geri dönün
 */
 
-function milDonusturucu(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function milDonusturucu(km) {
+  let mil = km * 0.62137;
+  return mil;
 }
-
 //Görev 4b - Santimetreden Feet
 /*
 Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yap:
@@ -127,8 +141,9 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yap:
 Google'da arama ipucu: "feet cm dönüştürme"
 */
 
-function feetDonusturucu(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function feetDonusturucu(cm) {
+  let feet = cm * 0.032808;
+  return feet;
 }
 
 /* Görev 5 : 5 küçük maymun yatakta zıplamış şarkısını çocuklar için hazırladığımı varsayalım. https://www.youtube.com/watch?v=e4EJ34xnlxk */
@@ -144,9 +159,7 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yap:
 4. Bu döngüde, her seferinde cocukSarkisi fonsiyonu çalışsın ve console.log'a dönen metni yazdırsın.
 */
 
-function cocukSarkisi(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
-}
+function cocukSarkisi() {}
 
 /* Görev 6 : Not Hesaplayıcı */
 
